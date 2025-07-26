@@ -1,4 +1,10 @@
 # 📦 Inventory Management Tool - Backend APIs
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8e613933-7c4e-4744-9d83-bbf5f8516d2d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4bdaea84-de95-48ef-b7ce-73a16d2164df" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9dab508-3964-4d17-a803-b6c6dc9e7c25" />
+
+
+
 
 ## 🎯 Project Overview
 
