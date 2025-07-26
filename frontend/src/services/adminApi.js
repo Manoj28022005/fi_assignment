@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api';
-const ADMIN_URL = `${BASE_URL}/admin`;
+const BASE_URL = 'http://localhost:8080';
+const ADMIN_URL = `${BASE_URL}/api/admin`;
 
 // Add authorization header
 axios.interceptors.request.use((config) => {
@@ -44,9 +44,9 @@ export const getProductStats = async () => {
 
 export const checkAdminStatus = async () => {
   try {
-    console.log('Making admin check request to:', `${BASE_URL}/auth/check-admin`);
+    console.log('Making admin check request to:', `${BASE_URL}/check-admin`);
     console.log('Token:', localStorage.getItem('authToken'));
-    const response = await axios.get(`${BASE_URL}/auth/check-admin`);
+    const response = await axios.get(`${BASE_URL}/check-admin`);
     console.log('Admin check response:', response.data);
     return response.data.isAdmin;
   } catch (error) {

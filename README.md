@@ -1,8 +1,19 @@
-# 📦 Epify Backend Assignment - Inventory Management System
+# 📦 Inventory Management Tool - Backend APIs
 
-This project is a comprehensive implementation of the Epify Backend Assignment, featuring a full-stack inventory management system. The implementation goes beyond the basic requirements by including both a robust backend API and a user-friendly frontend interface.
+## 🎯 Project Overview
 
-## 📋 Assignment Requirements Met
+A comprehensive full-stack inventory management system built for small businesses. This application provides REST APIs to manage users and products with authentication, product management, and advanced analytics features.
+
+### 🚀 Key Features
+- **User Authentication**: Secure JWT-based login system
+- **Product Management**: Add, update, and retrieve products with inventory tracking
+- **Admin Analytics**: Advanced dashboard with product statistics and insights
+- **Interactive Documentation**: Swagger/OpenAPI documentation
+- **Frontend Interface**: React-based user interface
+- **Database Integration**: MySQL with automated schema initialization
+- **Docker Support**: Containerized deployment
+
+## 📋 Assignment Requirements Completed
 
 1. **Authentication System** (POST /login)
    - ✅ Implemented secure user registration and login

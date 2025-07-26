@@ -3,7 +3,7 @@ import {
   getMostAddedProducts,
   getProductStats,
   getProductHistory
-} from '../services/api';
+} from '../services/adminApi';
 import {
   Card,
   CardContent,
@@ -108,7 +108,7 @@ const AdminDashboard = () => {
                 Average Price
               </Typography>
               <Typography variant="h5">
-                ${stats?.average_price?.toFixed(2) || '0.00'}
+                ${parseFloat(stats?.average_price || 0).toFixed(2)}
               </Typography>
             </CardContent>
           </Card>
@@ -120,7 +120,7 @@ const AdminDashboard = () => {
                 Inventory Value
               </Typography>
               <Typography variant="h5">
-                ${stats?.inventory_value?.toFixed(2) || '0.00'}
+                ${parseFloat(stats?.inventory_value || 0).toFixed(2)}
               </Typography>
             </CardContent>
           </Card>

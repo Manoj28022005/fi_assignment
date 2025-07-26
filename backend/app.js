@@ -15,7 +15,10 @@ expressApp.use(cors());
 expressApp.use(express.json());
 testDbConnection();
 
-expressApp.use("/api", require("./routes/authRoutes.js"));
+// Auth routes at root level for direct access
+expressApp.use("/", require("./routes/authRoutes.js"));
+
+// Other API routes under /api prefix
 expressApp.use("/api", require("./routes/productRoutes.js"));
 expressApp.use("/api/admin", require("./routes/adminRoutes.js"));
 

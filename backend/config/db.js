@@ -73,6 +73,13 @@ const initialiseDatabase = async () => {
       FOREIGN KEY (user_id) REFERENCES users(id)
     );`);
 
+    // Ensure first user (ID 1) has admin privileges if exists
+    const [userCheck] = await connection.query(`SELECT id FROM users WHERE id = 1;`);
+    if (userCheck.length > 0) {
+      await connection.query(`INSERT IGNORE INTO admin_users (user_id, role) VALUES (1, 'admin');`);
+      console.log("Admin privileges granted to user ID 1");
+    }
+
     console.log("Database and tables verified / created");
   } finally {
     await connection.end();
